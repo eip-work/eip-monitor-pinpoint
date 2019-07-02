@@ -1,0 +1,9 @@
+{
+  "name": "Pinpoint 监控套件",
+  "id": "eip-monitor-pinpoint",
+  "version": "0.1.0",
+  "lastUpdate": "2019-07-02",
+  "maintainer": "shaohq@foxmail.com",
+  "scripts": ["script/pinpoint-addon.js"],
+  "k8s": ["pinpoint-install.yaml"]
+}
