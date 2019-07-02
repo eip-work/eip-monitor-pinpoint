@@ -5,5 +5,5 @@
   "lastUpdate": "2019-07-02",
   "maintainer": "shaohq@foxmail.com",
   "scripts": ["pinpoint-addon.js"],
-  "k8s": ["pinpoint-install.yaml"]
+  "k8s": ["pinpoint-k8s.yaml"]
 }
