@@ -54,4 +54,4 @@ let PinpointMonitor = {
 
 addon.containers.push(PinpointMonitor)
 
-installEipMonitorAddons(addon)
+window.EIP_MONITOR_ADDON_TO_ACTIVATE = addon

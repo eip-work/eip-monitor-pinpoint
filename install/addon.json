@@ -6,6 +6,7 @@
   "maintainer": "shaohq@foxmail.com",
   "scripts": ["pinpoint-addon.js"],
   "k8s": ["pinpoint-k8s.yaml"],
+  "isGlobal": false,
   "info": {
     "install": "安装 Pinpoint Hbase, Pinpoint Collector, Pinpoint Web",
     "buttons": "在容器级别添加 '链路追踪' 按钮",
