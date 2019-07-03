@@ -181,28 +181,6 @@ spec:
       nodePort: 0
 
 ---
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
-metadata:
-  namespace: test
-  name: monitor-pinpoint-hbase
-  annotations:
-    k8s.eip.work/workload: monitor-pinpoint-hbase
-    k8s.eip.work/displayName: 监控HBase
-  labels:
-    k8s.eip.work/layer: monitor
-    k8s.eip.work/name: monitor-pinpoint-hbase
-spec:
-  rules:
-    - host: test-pinpoint-hbase.pzy.liangzixin.xyz
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: monitor-pinpoint-hbase
-              servicePort: hdpstf
-
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -282,26 +260,3 @@ spec:
       protocol: TCP
       name: xdcmrq
       nodePort: 0
-
----
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
-metadata:
-  namespace: test
-  name: monitor-pinpoint-web
-  annotations:
-    k8s.eip.work/workload: monitor-pinpoint-web
-    k8s.eip.work/displayName: 性能监控及链路追踪
-  labels:
-    k8s.eip.work/layer: monitor
-    k8s.eip.work/name: monitor-pinpoint-web
-spec:
-  rules:
-    - host: pinpoint-test.pzy.liangzixin.xyz
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: monitor-pinpoint-web
-              servicePort: znynn3
-
