@@ -89,7 +89,7 @@ metadata:
     k8s.eip.work/workload: monitor-pinpoint-hbase
     k8s.eip.work/displayName: 监控HBase
     k8s.eip.work/service: ClusterIP
-    k8s.eip.work/ingress: 'true'
+    k8s.eip.work/ingress: 'false'
   labels:
     k8s.eip.work/layer: monitor
     k8s.eip.work/name: monitor-pinpoint-hbase
@@ -190,7 +190,7 @@ metadata:
     k8s.eip.work/workload: monitor-pinpoint-web
     k8s.eip.work/displayName: 性能监控及链路追踪
     k8s.eip.work/service: ClusterIP
-    k8s.eip.work/ingress: 'true'
+    k8s.eip.work/ingress: 'false'
   labels:
     k8s.eip.work/layer: monitor
     k8s.eip.work/name: monitor-pinpoint-web
