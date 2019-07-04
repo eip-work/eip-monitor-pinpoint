@@ -43,7 +43,7 @@ async function openPinpointMonitor(context) {
 }
 
 let PinpointMonitor = {
-  title: "链路追踪-",
+  title: "链路追踪",
   loading: false,
   icon: 'el-icon-monitor',
   visible: function (context) {
