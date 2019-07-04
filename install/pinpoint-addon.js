@@ -1,10 +1,10 @@
 let addon = {
-  enabled: false,
   preFlight: function (context) {
-    this.enabled = true
-  },
-  preFlightNamespace: function (context) {
-    console.log('pinpoint - ' + context.namespace)
+    context.$notify({
+      title: '初始化 Pinpoint监控套件',
+      message: '初始化完成',
+      type: 'success'
+    })
   },
   nodes: [],
   pods: [],
